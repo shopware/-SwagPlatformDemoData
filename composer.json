@@ -35,5 +35,12 @@
         "psr-4": {
             "Swag\\PlatformDemoData\\": "src/"
         }
+    },
+    "scripts": {
+        "cs": "../../../vendor/bin/php-cs-fixer fix --dry-run",
+        "cs-fix": "../../../vendor/bin/php-cs-fixer fix",
+        "phpstan": [
+            "../../../vendor/bin/phpstan analyze"
+        ]
     }
 }

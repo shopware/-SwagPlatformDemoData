@@ -1,11 +1,8 @@
 includes:
-    - ../../../vendor/phpstan/phpstan/conf/bleedingEdge.neon
+    - ../../../src/Core/DevOps/StaticAnalyze/PHPStan/common.neon
 
 parameters:
-    level: 8
     tmpDir: var/cache/phpstan
-    inferPrivatePropertyTypeFromConstructor: true
-    checkMissingIterableValueType: false
 
     bootstrapFiles:
         - ../../../src/Core/DevOps/StaticAnalyze/phpstan-bootstrap.php
@@ -15,9 +12,8 @@ parameters:
         container_xml_path: '../../../var/cache/phpstan_dev/Shopware_Core_DevOps_StaticAnalyze_StaticAnalyzeKernelPhpstan_devDebugContainer.xml'
         console_application_loader: vendor/shopware/core/DevOps/StaticAnalyze/console-application.php
     excludePaths:
-        - vendor
+        - vendor?
         - var
-        - ecs.php
     paths:
         - src
         - tests

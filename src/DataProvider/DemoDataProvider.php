@@ -24,5 +24,7 @@ abstract class DemoDataProvider
      */
     abstract public function getPayload(): array;
 
-    public function finalize(Context $context): void {}
+    public function finalize(Context $context): void
+    {
+    }
 }

@@ -25,7 +25,7 @@ class DemoDataServiceTest extends TestCase
 {
     use IntegrationTestBehaviour;
 
-    public function setUp(): void
+    protected function setUp(): void
     {
         $connection = $this->getContainer()->get(Connection::class);
 
