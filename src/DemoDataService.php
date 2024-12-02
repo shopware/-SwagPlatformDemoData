@@ -51,7 +51,7 @@ class DemoDataService
                 ],
             ];
 
-            $request = new Request([], [], [], [], [], [], \json_encode($payload, JSON_THROW_ON_ERROR));
+            $request = new Request([], [], [], [], [], [], \json_encode($payload, \JSON_THROW_ON_ERROR));
 
             $this->requestStack->push($request);
             $response = $this->sync->sync($request, $context);
@@ -89,7 +89,7 @@ class DemoDataService
                 ],
             ];
 
-            $request = new Request([], [], [], [], [], [], \json_encode($payload, JSON_THROW_ON_ERROR));
+            $request = new Request([], [], [], [], [], [], \json_encode($payload, \JSON_THROW_ON_ERROR));
 
             try {
                 $this->requestStack->push($request);

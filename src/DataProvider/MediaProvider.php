@@ -95,10 +95,10 @@ class MediaProvider extends DemoDataProvider
                 new MediaFile(
                     $file,
                     \mime_content_type($file) ?: 'application/octet-stream',
-                    \pathinfo($file, PATHINFO_EXTENSION),
+                    \pathinfo($file, \PATHINFO_EXTENSION),
                     \filesize($file) ?: 0
                 ),
-                \pathinfo($file, PATHINFO_FILENAME),
+                \pathinfo($file, \PATHINFO_FILENAME),
                 \basename(\dirname($file)),
                 $context
             );

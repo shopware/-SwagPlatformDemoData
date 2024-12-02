@@ -27,6 +27,7 @@ class TranslationHelper
 
     /**
      * @param array<string, mixed> $translations
+     *
      * @return array<string, mixed>
      */
     public function adjustTranslations(array $translations): array
@@ -42,6 +43,7 @@ class TranslationHelper
 
     /**
      * @param array<string, mixed> $translations
+     *
      * @return array<string, mixed>
      */
     private function clearUnavailableTranslations(array $translations): array
